@@ -1,0 +1,20 @@
+Rest Api Structures
+
+1. Create Deal - Method
+
+POST : /deal
+
+2. GetAllDeals - Method
+
+GET : /deal/search/:itemName
+
+3. getDeal - Method
+
+GET : /deal/:dealId
+
+4. Update Deal
+
+PUT : /deal/:dealId
+
+
+
