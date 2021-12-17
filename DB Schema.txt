@@ -1,0 +1,20 @@
+
+DEAL DATABASE - Using Relational Database
+
+1.Table ITEM
+-- ItemId,ItemName
+
+2.Table User
+-- UserId,UserName,UserType
+
+3.Table Deal
+-- DealId, SellerId, ItemId, Quantity, AmountPerItem, Status, EndTime;
+	
+   SellerId--> UserId(User)
+   ItemId --> ItemId(Item)
+   Status -->   0 - Created
+		1  - Available
+		2  - End  
+ 
+4.Table UserDeals
+-- UserId, DealId
