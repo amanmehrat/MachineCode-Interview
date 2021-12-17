@@ -1,67 +1,71 @@
-# MachineCode-Interview
-Ecommerce Feature
+# MachineCode-Interview   
+Ecommerce Feature   
 
-Java Machine Code 
+Java Machine Code    
 
-Entry Class
---> TestMainMethod
+Entry Class    
+--> TestMainMethod    
 
-1. Entities
-     USER 
-        Customer
-        Seller  
-     Item
-     Deal
+1. Entities    
+     USER    
+        Customer  
+        Seller    
+     Item  
+     Deal  
    
    
-2. DataBase Schema
-  Relational Database
+2. DataBase Schema  
+  Relational Database  
 
-    1.Table ITEM
-    -- ItemId,ItemName
+    1.Table ITEM  
+    -- ItemId,ItemName   
 
-    2.Table User
-    -- UserId,UserName,UserType
+    2.Table User   
+    -- UserId,UserName,UserType   
 
     3.Table Deal
-    -- DealId, SellerId, ItemId, Quantity, AmountPerItem, Status, EndTime;
+    -- DealId, SellerId, ItemId, Quantity, AmountPerItem, Status, EndTime    
 
-       SellerId--> UserId(User)
-       ItemId --> ItemId(Item)
-       Status -->   0 - Created
-        1  - Available
-        2  - End  
+       SellerId--> UserId(User)   
+       ItemId --> ItemId(Item)   
+       Status -->   0 - Created   
+        1  - Available   
+        2  - End     
 
-    //to find all deals of users
-    4.Table UserDeals
-    -- UserId, DealId
+    //to find all deals of users   
+    4.Table UserDeals   
+    -- UserId, DealId  
 
-3. API Methods
+3. API Methods    
 
-    1. Create Deal - Method
-    POST : /deal
-    return Status 201 Created OK
-            Deal Object 
+    1. Create Deal - Method   
+    POST : /deal   
+    return Status 201 Created OK   
+            Deal Object    
 
-    2. GetAllDeals - Method
-    GET : /deal/search/:itemName
-    return Status 200 
-            Deals JSON List of Object
+    2. GetAllDeals - Method   
+    GET : /deal/search/:itemName  
+    return Status 200   
+            Deals JSON List of Object  
             
-    3. getDeal - Method
-    GET : /deal/:dealId
-    return Status 200 
-            Deal Object 
+    3. getDeal - Method  
+    GET : /deal/:dealId  
+    return Status 200   
+            Deal Object   
 
-    4. Update Deal
-    PATCH : /deal/:dealId
-    return Status 204 Updated 
-          Updated Deal Object 
+    4. Update Deal  
+    PATCH : /deal/:dealId   
+    return Status 204 Updated   
+          Updated Deal Object   
 
 
-   OOPS Pattern Used
-   1. Stretegy pattern
-   -- for Search deals of Items using ItemName
-   2. factory pattern
-   -- can be Used to get Object of Specific User -- Seller/Customer
+   OOPS Pattern Used   
+   1. Stretegy pattern  
+   -- for Search deals of Items using ItemName   
+   2. factory pattern  
+   -- can be Used to get Object of Specific User -- Seller/Customer  
+
+---Test Output
+![image](https://user-images.githubusercontent.com/74495322/146478502-fd2bac69-bd9f-473b-9a05-81f84782c9e5.png)
+
 
